@@ -1,30 +1,3 @@
-// ============================================================================
-//  SimpleEngine 1.0 — A UCI Chess Engine in C++17
-//  --------------------------------------------------------------------------
-//  Single-file implementation. No external dependencies.
-//
-//  Build:
-//      g++ -O2 -std=c++17 -o engine engine.cpp
-//      (or clang++ / MSVC cl /O2 engine.cpp)
-//
-//  Quick Makefile (optional):
-//      CXX      = g++
-//      CXXFLAGS = -O2 -std=c++17 -Wall
-//      engine: engine.cpp
-//          $(CXX) $(CXXFLAGS) -o $@ $<
-//
-//  Features:
-//    - Bitboard move generation (ray attacks), mailbox + Zobrist incremental hash
-//    - Alpha-Beta / PVS, iterative deepening, transposition table
-//    - Null-move pruning, late-move reductions, check extension
-//    - Killer moves + history heuristic, MVV-LVA move ordering
-//    - Quiescence search with full evasion generation
-//    - Tapered evaluation: material, PSTs, bishop pair, passed/doubled pawns
-//    - UCI protocol: uci / isready / position / go / perft / setoption Hash
-//
-//  Author: <you>
-//  License: MIT (or whatever you prefer)
-// ============================================================================
 
 #include <cstdint>
 #include <cstring>
